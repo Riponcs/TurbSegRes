@@ -1,4 +1,4 @@
-# Nerfies
+# Turb-Seg-Res
 
 This is the repository that contains source code for the [Turb-Seg-Res website](https://riponcs.github.io/TurbSegRes).
 
