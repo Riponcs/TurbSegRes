@@ -2,96 +2,101 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="description"
-    content="Turb-Seg-Res: A Segment-then-Restore Pipeline for Dynamic Videos with Atmospheric Turbulence.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Turb-Seg-Res: A Segment-then-Restore Pipeline</title>
+    <meta charset="utf-8">
+    <meta name="description"
+        content="Turb-Seg-Res: A Segment-then-Restore Pipeline for Dynamic Videos with Atmospheric Turbulence.">
+    <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Turb-Seg-Res: A Segment-then-Restore Pipeline</title>
 
-  <script>
-    window.dataLayer = window.dataLayer || [];
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
-    gtag('js', new Date());
+        gtag('js', new Date());
 
-    gtag('config', 'G-PYVRSFMDRL');
-  </script>
+        gtag('config', 'G-PYVRSFMDRL');
+    </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
-  <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="icon" href="./static/images/favicon.svg">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
-  <script src="./static/js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+    <script src="./static/js/video_comparison.js"></script>
 </head>
 
 <body>
 
 
-  <section class="hero">
-    <div class="hero-body">
-      <!-- <div class="container is-max-desktop"> -->
-      <div class="container">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Turb-Seg-Res: A Segment-then-Restore Pipeline for Dynamic Videos
-              with Atmospheric Turbulence</h1>
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">
-                <a href="https://riponcs.github.io/">Ripon Kumar Saha</a><sup>1</sup>,</span>
-              <span class="author-block">
-                <a href="https://www.linkedin.com/in/dehao-qin/?locale=en_US">Dehao Qin</a><sup>2</sup>,</span>
-              <span class="author-block">
-                <a href="https://www.linkedin.com/in/nianyi-li-13a65b88/">Nianyi Li</a><sup>2</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://cs.gmu.edu/~jinweiye/">Jinwei Ye</a><sup>3</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://sites.google.com/asu.edu/imaging-lyceum">Suren Jayasuriya</a><sup>1</sup>,
-              </span>
-            </div>
+    <section class="hero">
+        <div class="hero-body">
+            <!-- <div class="container is-max-desktop"> -->
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">Turb-Seg-Res: A Segment-then-Restore Pipeline for
+                            Dynamic Videos
+                            with Atmospheric Turbulence</h1>
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">
+                                <a href="https://riponcs.github.io/">Ripon Kumar Saha</a><sup>1</sup>,</span>
+                            <span class="author-block">
+                                <a href="https://www.linkedin.com/in/dehao-qin/?locale=en_US">Dehao
+                                    Qin</a><sup>2</sup>,</span>
+                            <span class="author-block">
+                                <a href="https://www.linkedin.com/in/nianyi-li-13a65b88/">Nianyi Li</a><sup>2</sup>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://cs.gmu.edu/~jinweiye/">Jinwei Ye</a><sup>3</sup>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://sites.google.com/asu.edu/imaging-lyceum">Suren
+                                    Jayasuriya</a><sup>1</sup>,
+                            </span>
+                        </div>
 
-            <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>Arizona State University,</span>
-              <span class="author-block"><sup>2</sup>Clemson University,</span>
-              <span class="author-block"><sup>2</sup>George Mason University</span>
-            </div>
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block"><sup>1</sup>Arizona State University,</span>
+                            <span class="author-block"><sup>2</sup>Clemson University,</span>
+                            <span class="author-block"><sup>2</sup>George Mason University</span>
+                        </div>
 
-            <div class="column has-text-centered">
-              <div class="publication-links">
-                <!-- PDF Link. -->
-                <span class="link-block">
-                  <a href="#" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                    </span>
-                    <span>Paper</span>
-                  </a>
-                </span>
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/2404.13605" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                    </span>
-                    <span>arXiv</span>
-                  </a>
-                </span>
-                <!-- Video Link. -->
-                <!-- <span class="link-block">
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- PDF Link. -->
+                                <span class="link-block">
+                                    <a href="#" class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </span>
+                                        <span>Paper</span>
+                                    </a>
+                                </span>
+                                <span class="link-block">
+                                    <a href="https://arxiv.org/abs/2404.13605"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>
+                                        <span>arXiv</span>
+                                    </a>
+                                </span>
+                                <!-- Video Link. -->
+                                <!-- <span class="link-block">
                   <a href="#"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -100,260 +105,340 @@
                     <span>Video</span>
                   </a>
                 </span> -->
-                <!-- Code Link. -->
-                <span class="link-block">
-                  <a href="https://github.com/Riponcs/Turb-Seg-Res/tree/main" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-                <!-- Dataset Link. -->
-                <span class="link-block">
-                  <a href="https://turbulence-research.github.io/"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="far fa-images"></i>
-                    </span>
-                    <span>Data</span>
-                  </a>
-              </div>
+                                <!-- Code Link. -->
+                                <span class="link-block">
+                                    <a href="https://github.com/Riponcs/Turb-Seg-Res/tree/main"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Code</span>
+                                    </a>
+                                </span>
+                                <!-- Dataset Link. -->
+                                <span class="link-block">
+                                    <a href="https://turbulence-research.github.io/"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="far fa-images"></i>
+                                        </span>
+                                        <span>Data</span>
+                                    </a>
+                            </div>
 
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="hero teaser">
-    <!-- <div class="container is-max-desktop"> -->
-    <div class="container">
-      <div class="hero-body">
-        <video id="teaser" autoplay muted loop playsinline height="100%">
-          <source src="./static/videos/All Turbulence Restoration Methods Comparison.mkv" type="video/mp4">
-        </video>
-        <h2 class="subtitle has-text-centered">
-          <span class="dnerf">Turb-Seg-Res</span> Restore long renge videos with turbulence effect with keeping temporal
-          consistency.
-        </h2>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="section">
-    <div class="container is-max-desktop">
-      <!-- Abstract. -->
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Abstract</h2>
-          <div class="content has-text-justified">
-            <p>
-              Tackling image degradation due to atmospheric turbulence, particularly in dynamic environment, remains a
-              challenge for long-range imaging systems. Existing techniques have been primarily designed for static
-              scenes or scenes with small motion. This paper presents the first segment-then-restore pipeline for
-              restoring the videos of dynamic scenes in turbulent environment. We leverage mean optical flow with an
-              unsupervised motion segmentation method to separate dynamic and static scene components prior to
-              restoration. After camera shake compensation and segmentation, we introduce foreground/background
-              enhancement leveraging the statistics of turbulence strength and a transformer model trained on a novel
-              noise-based procedural turbulence generator for fast dataset augmentation.
-            </p>
-          </div>
+    <section class="hero teaser">
+        <!-- <div class="container is-max-desktop"> -->
+        <div class="container">
+            <div class="hero-body">
+                <div class="video-compare-container">
+                    <video class="video" id="Specond" loop playsinline autoPlay muted onplay="resizeAndPlay(this)">
+                        <source src="./static/videos/InputVsTurbSegRes.mp4" type="video/mp4">
+                    </video>
+                    <canvas height=0 id="SpecondMerge" , style="width: 100%;"></canvas>
+                </div>
+                <h2 class="subtitle has-text-centered">
+                    <span class="dnerf">Turb-Seg-Res</span>restores long range videos with turbulence degradations while
+                    preserving temporal consistency.
+                </h2>
+            </div>
         </div>
-      </div>
-      <!--/ Abstract. -->
-
-      <!-- Pipeline. -->
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Pipeline</h2>
-          <div class="pipeline">
-            <img src="static/images/Architecture.jpg" class="pipeline image" alt="pipeline image">
-          </div>
-        </div>
-      </div>
-
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <div class="content has-text-justified">
-            <p>
-              Benchmarked against existing restoration methods, our approach restores most of the geometric distortion
-              and enhances sharpness for videos. We make our code, simulator, and data publicly available to advance the
-              field of video restoration from turbulence: <a
-                href="https://riponcs.github.io/TurbSegRes/">riponcs.github.io/TurbSegRes</a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <!--/ Pipeline. -->
-
-    </div>
-  </section>
+    </section>
 
 
-  <section class="section">
-    <div class="container is-max-desktop">
+    <section class="section">
+        <div class="container is-max-desktop">
+            <!-- Abstract. -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            Tackling image degradation due to atmospheric turbulence, particularly in dynamic
+                            environment, remains a
+                            challenge for long-range imaging systems. Existing techniques have been primarily designed
+                            for static
+                            scenes or scenes with small motion. This paper presents the first segment-then-restore
+                            pipeline for
+                            restoring the videos of dynamic scenes in turbulent environment. We leverage mean optical
+                            flow with an
+                            unsupervised motion segmentation method to separate dynamic and static scene components
+                            prior to
+                            restoration. After camera shake compensation and segmentation, we introduce
+                            foreground/background
+                            enhancement leveraging the statistics of turbulence strength and a transformer model trained
+                            on a novel
+                            noise-based procedural turbulence generator for fast dataset augmentation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--/ Abstract. -->
 
-      <!-- Animation. -->
-      <div class="columns is-centered">
-        <div class="column is-full-width">
+            <!-- Pipeline. -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Pipeline</h2>
+                    <div class="pipeline">
+                        <img src="static/images/Architecture.jpg" class="pipeline image" alt="pipeline image">
+                    </div>
+                </div>
+            </div>
 
-          <!-- Simulation. -->
-          <h2 class="title is-3">Results</h2>
-          <h3 class="title is-4">Simulation of Turbulence Video</h3>
-          <div class="content has-text-justified">
-            <p>
-              <span class="dnerf">Turb-Seg-Res</span> introduces a novel tilt-and-blur video simulator based on simplex
-              noise for rapidly generating plausible turbulence effects with temporal coherence. Unlike existing
-              physics-based methods, our procedural noise approach efficiently models coherent pixel shifts and adaptive
-              blurring across video frames, mimicking atmospheric turbulence over time. This simulator can process
-              200x200 videos at real time, enabling the rapid creation of large training datasets up to 1024x1024
-              resolution for our transformer model.
-            </p>
-          </div>
-          <div class="content has-text-centered">
-            <video id="replay-video" controls muted preload playsinline width="100%">
-              <source src="./static/videos/PS2 vs Our Turbulence Simulator.mkv" type="video/mp4">
-            </video>
-          </div>
-          <!--/ Simulation. -->
-
-          <!-- Simulation. -->
-          <h3 class="title is-4">Unsupervised Motion Segmentation for Dynamic Scenes</h3>
-          <div class="content has-text-justified">
-            <p>
-              <span class="dnerf">Turb-Seg-Res</span> introduces an efficient unsupervised motion segmentation technique
-              tailored for dynamic scenes affected by atmospheric turbulence. Our approach leverages integrated
-              multi-frame optical flow analysis to separate moving foreground objects from static background regions,
-              even amidst turbulence-induced distortions. By adaptively determining the optimal number of neighboring
-              frames, we enhance the distinction between static and dynamic components, effectively discriminating
-              inherent object motion from turbulence effects. This unsupervised segmentation method provides a crucial
-              first step in our pipeline, enabling targeted enhancement strategies for the static background and dynamic
-              foreground regions.
-            </p>
-          </div>
-          <div class="content has-text-centered">
-            <video id="replay-video" controls muted preload playsinline width="100%">
-              <source src="./static/videos/Predicted  Mask vs GT Mask on Stable Video.mp4" type="video/mp4">
-            </video>
-          </div>
-          <!--/ Simulation. -->
-
-
-          <!-- Add a 100 pixel gap now -->
-          <div style="height: 80px;"></div>
-          <h2 class="title is-3">Ablation Study</h2>
-
-
-          <!-- W/O Stabilization. -->
-          <h3 class="title is-4">Without and With Stabilizaton</h3>
-          <div class="content has-text-justified">
-            <p>
-              Stabilization is crucial for aligning temporal frames. In <span class="dnerf">Turb-Seg-Res</span>, we
-              utilize GPU-accelerated normalized cross-correlation to achieve frame alignment. The impact of
-              stabilization is readily apparent in the restored video.
-            </p>
-          </div>
-          <div class="content has-text-centered">
-            <video id="replay-video" controls muted preload playsinline width="100%">
-              <source src="./static/videos/Without and With Stabilization.mkv" type="video/mp4">
-            </video>
-          </div>
-          <!--/ W/O Stabilization. -->
-
-
-          <!-- Interpolating. -->
-          <h3 class="title is-4">Without and With Segmentation</h3>
-          <div class="content has-text-justified">
-            <p>
-              In <span class="dnerf">Turb-Seg-Res</span>, segmentation plays a crucial role, allowing for the
-              application of different processing techniques to distinct regions of the video. </p>
-          </div>
-          <div class="content has-text-centered">
-            <video id="replay-video" controls muted preload playsinline width="100%">
-              <source src="./static/videos/Without and With Segmentation.mkv" type="video/mp4">
-            </video>
-          </div>
-          <!--/ Interpolating. -->
-
-
-          <!-- W/O and With Segmentation. -->
-          <h3 class="title is-4">Without and With Transformer Model</h3>
-          <div class="content has-text-justified">
-            <p>
-              In <span class="dnerf">Turb-Seg-Res</span>, we employ a transformer model trained on simulated videos from
-              our simulator to enhance the turbulence effect. The impact is notably more pronounced in the restored
-              video.
-            </p>
-          </div>
-          <div class="content has-text-centered">
-            <video id="replay-video" controls muted preload playsinline width="100%">
-              <source src="./static/videos/Without and With Restormer.mkv" type="video/mp4">
-            </video>
-          </div>
-          <!--/ W/O and With Segmentation. -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <div class="content has-text-justified">
+                        <p>
+                            Benchmarked against existing restoration methods, our approach restores most of the
+                            geometric distortion
+                            and enhances sharpness for videos. We make our code, simulator, and data publicly available
+                            to advance the
+                            field of video restoration from turbulence: <a
+                                href="https://riponcs.github.io/TurbSegRes/">riponcs.github.io/TurbSegRes</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--/ Pipeline. -->
 
         </div>
-      </div>
-      <!--/ Animation. -->
+    </section>
 
-
-      <!-- Concurrent Work. -->
-      <div class="columns is-centered">
-        <div class="column is-full-width">
-          <h2 class="title is-3">Related Links</h2>
-
-          <div class="content has-text-justified">
-            <p><span class="dnerf">Turb-Seg-Res</span> paper estimates turbulence strength of the video and determines the C<sub>n</sub><sup>2</sup> value based on the concept introduced in the paper <a href="https://doi.org/10.1364/OE.469976">Turbulence strength C<sub>n</sub><sup>2</sup> estimation from video using physics-based deep learning</a>. This value is then utilized to enhance the video.</p>
-
-            <p><span class="dnerf">Turb-Seg-Res</span> paper employs adaptive average optical flow for segmentation. A similar approach, albeit without the adaptive component and with an additional network for mask refinement, is proposed in <a href="https://arxiv.org/abs/2311.03572">Unsupervised Region-Growing Network for Object Segmentation in Atmospheric Turbulence</a>.</p>
-          </div>
+    <!-- Slider Comparison -->
+    <!-- <section class="section">
+        <div class="container is-max-desktop">
+            <h2 class="title is-3">Turbulence Restoration Results</h2>
+            <h3 class="title is-4">URG-T Dataset: Turbulence Video Input → Model Restored Output</h3>
+            <div class="video-compare-container">
+                <video class="video" id="First" loop playsinline autoPlay muted onplay="resizeAndPlay(this)">
+                    <source src="./static/videos/PS2 vs Our Turbulence Simulator.mkv" type="video/mp4">
+                </video>
+                <canvas height=0 id="FirstMerge" , style="width: 100%;"></canvas>
+            </div>
         </div>
-      </div>
-      <!--/ Concurrent Work. -->
-
-    </div>
-  </section>
+    </section> -->
+    <!--/ Slider Comparison -->
 
 
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>@article{saha2024turb,
+    <section class="section">
+        <div class="container is-max-desktop">
+
+            <!-- Animation. -->
+            <div class="columns is-centered">
+                <div class="column is-full-width">
+
+                    <!-- Simulation. -->
+                    <h2 class="title is-3">Results</h2>
+                    <h3 class="title is-4">Simulation of Turbulence Video</h3>
+                    <div class="content has-text-justified">
+                        <p>
+                            <span class="dnerf">Turb-Seg-Res</span> introduces a novel tilt-and-blur video simulator
+                            based on simplex
+                            noise for rapidly generating plausible turbulence effects with temporal coherence. Unlike
+                            existing
+                            physics-based methods, our procedural noise approach efficiently models coherent pixel
+                            shifts and adaptive
+                            blurring across video frames, mimicking atmospheric turbulence over time. This simulator can
+                            process
+                            200x200 videos at real time, enabling the rapid creation of large training datasets up to
+                            1024x1024
+                            resolution for our transformer model.
+                        </p>
+                    </div>
+                    <div class="content has-text-centered">
+                        <video id="replay-video" controls muted preload playsinline width="100%">
+                            <source src="./static/videos/PS2 vs Our Turbulence Simulator.mkv" type="video/mp4">
+                        </video>
+                    </div>
+                    <!--/ Simulation. -->
+
+                    <!-- Simulation. -->
+                    <h3 class="title is-4">Unsupervised Motion Segmentation for Dynamic Scenes</h3>
+                    <div class="content has-text-justified">
+                        <p>
+                            <span class="dnerf">Turb-Seg-Res</span> introduces an efficient unsupervised motion
+                            segmentation technique
+                            tailored for dynamic scenes affected by atmospheric turbulence. Our approach leverages
+                            integrated
+                            multi-frame optical flow analysis to separate moving foreground objects from static
+                            background regions,
+                            even amidst turbulence-induced distortions. By adaptively determining the optimal number of
+                            neighboring
+                            frames, we enhance the distinction between static and dynamic components, effectively
+                            discriminating
+                            inherent object motion from turbulence effects. This unsupervised segmentation method
+                            provides a crucial
+                            first step in our pipeline, enabling targeted enhancement strategies for the static
+                            background and dynamic
+                            foreground regions.
+                        </p>
+                    </div>
+                    <div class="content has-text-centered">
+                        <!-- <video id="replay-video" controls muted preload playsinline width="100%">
+                            <source src="./static/videos/Predicted  Mask vs GT Mask on Stable Video.mp4"
+                                type="video/mp4">
+                        </video> -->
+                        <div class="video-compare-container">
+                            <video class="video" id="Specond" loop playsinline autoPlay muted onplay="resizeAndPlay(this)">
+                                <source src="./static/videos/Predicted  Mask vs GT Mask on Stable Video.mp4" type="video/mp4">
+                            </video>
+                            <canvas height=0 id="SpecondMerge" , style="width: 100%;"></canvas>
+                        </div>
+                    </div>
+                    <!--/ Simulation. -->
+
+
+                    <!-- Add a 100 pixel gap now -->
+                    <div style="height: 80px;"></div>
+                    <h2 class="title is-3">Ablation Study</h2>
+
+
+                    <!-- W/O Stabilization. -->
+                    <h3 class="title is-4">Without and With Stabilizaton</h3>
+                    <div class="content has-text-justified">
+                        <p>
+                            Stabilization is crucial for aligning temporal frames. In <span
+                                class="dnerf">Turb-Seg-Res</span>, we
+                            utilize GPU-accelerated normalized cross-correlation to achieve frame alignment. The impact
+                            of
+                            stabilization is readily apparent in the restored video.
+                        </p>
+                    </div>
+                    <!-- <div class="content has-text-centered">
+                        <video id="replay-video" controls muted preload playsinline width="100%">
+                            <source src="./static/videos/Without and With Stabilization.mkv" type="video/mp4">
+                        </video>
+                    </div> -->
+                    <div class="video-compare-container">
+                        <video class="video" id="Stab" loop playsinline autoPlay muted onplay="resizeAndPlay(this)">
+                            <source src="./static/videos/Without and With Stabilization.mkv" type="video/mp4">
+                        </video>
+                        <canvas height=0 id="StabMerge" , style="width: 100%;"></canvas>
+                    </div>
+                    <!--/ W/O Stabilization. -->
+
+
+                    <!-- Interpolating. -->
+                    <h3 class="title is-4">Without and With Segmentation</h3>
+                    <div class="content has-text-justified">
+                        <p>
+                            In <span class="dnerf">Turb-Seg-Res</span>, segmentation plays a crucial role, allowing for
+                            the
+                            application of different processing techniques to distinct regions of the video. </p>
+                    </div>
+                    <!-- <div class="content has-text-centered">
+                        <video id="replay-video" controls muted preload playsinline width="100%">
+                            <source src="./static/videos/Without and With Segmentation.mkv" type="video/mp4">
+                        </video>
+                    </div> -->
+                    <div class="video-compare-container">
+                        <video class="video" id="Segmentation" loop playsinline autoPlay muted onplay="resizeAndPlay(this)">
+                            <source src="./static/videos/Without and With Segmentation.mkv" type="video/mp4">
+                        </video>
+                        <canvas height=0 id="SegmentationMerge" , style="width: 100%;"></canvas>
+                    </div>
+                    <!--/ Interpolating. -->
+
+
+                    <!-- W/O and With Segmentation. -->
+                    <h3 class="title is-4">Without and With Transformer Model</h3>
+                    <div class="content has-text-justified">
+                        <p>
+                            In <span class="dnerf">Turb-Seg-Res</span>, we employ a transformer model trained on
+                            simulated videos from
+                            our simulator to enhance the turbulence effect. The impact is notably more pronounced in the
+                            restored
+                            video.
+                        </p>
+                    </div>
+                    <!-- <div class="content has-text-centered">
+                        <video id="replay-video" controls muted preload playsinline width="100%">
+                            <source src="./static/videos/Without and With Restormer.mkv" type="video/mp4">
+                        </video>
+                    </div> -->
+                    <div class="video-compare-container">
+                        <video class="video" id="Restormer" loop playsinline autoPlay muted onplay="resizeAndPlay(this)">
+                            <source src="./static/videos/Without and With Restormer.mkv" type="video/mp4">
+                        </video>
+                        <canvas height=0 id="RestormerMerge" , style="width: 100%;"></canvas>
+                    </div>
+                    <!--/ W/O and With Segmentation. -->
+                </div>
+            </div>
+            <!--/ Animation. -->
+
+
+            <!-- Concurrent Work. -->
+            <div class="columns is-centered">
+                <div class="column is-full-width">
+                    <h2 class="title is-3">Related Links</h2>
+
+                    <div class="content has-text-justified">
+                        <p><span class="dnerf">Turb-Seg-Res</span> paper estimates turbulence strength of the video and
+                            determines the C<sub>n</sub><sup>2</sup> value based on the concept introduced in the paper
+                            <a href="https://doi.org/10.1364/OE.469976">Turbulence strength C<sub>n</sub><sup>2</sup>
+                                estimation from video using physics-based deep learning</a>. This value is then utilized
+                            to enhance the video.
+                        </p>
+
+                        <p><span class="dnerf">Turb-Seg-Res</span> paper employs adaptive average optical flow for
+                            segmentation. A similar approach, albeit without the adaptive component and with an
+                            additional network for mask refinement, is proposed in <a
+                                href="https://arxiv.org/abs/2311.03572">Unsupervised Region-Growing Network for Object
+                                Segmentation in Atmospheric Turbulence</a>.</p>
+                    </div>
+                </div>
+            </div>
+            <!--/ Concurrent Work. -->
+
+        </div>
+    </section>
+
+
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title">BibTeX</h2>
+            <pre><code>@article{saha2024turb,
         author    = {Saha, Ripon Kumar and Qin, Dehao and Li, Nianyi and Ye, Jinwei and Jayasuriya, Suren},
         title     = {Turb-Seg-Res: A Segment-then-Restore Pipeline for Dynamic Videos with Atmospheric Turbulence},
         journal   = {CVPR},
         year      = {2024},
-        url       = {https://riponcs.github.io/TurbSegRes},
       }</code></pre>
-      
-    </div>
-  </section>
 
-
-  <footer class="footer">
-    <div class="container">
-      <div class="content has-text-centered">
-        <a class="icon-link" href="#">
-          <i class="fas fa-file-pdf"></i>
-        </a>
-        <a class="icon-link" href="https://github.com/Riponcs" class="external-link" disabled>
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-      <div class="columns is-centered">
-        <div class="column is-8">
-          <div class="content">
-            <p>Website licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. Template from <a href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.</p>
-          </div>
-          
-          
         </div>
-      </div>
-    </div>
-  </footer>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <a class="icon-link" href="#">
+                    <i class="fas fa-file-pdf"></i>
+                </a>
+                <a class="icon-link" href="https://github.com/Riponcs" class="external-link" disabled>
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+                        <p>Website licensed under a <a rel="license"
+                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
+                                Attribution-ShareAlike 4.0 International License</a>. Template from <a
+                                href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
