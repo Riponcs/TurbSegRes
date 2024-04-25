@@ -280,15 +280,11 @@
                         </p>
                     </div>
                     <div class="content has-text-centered">
-                        <!-- <video id="replay-video" controls muted preload playsinline width="100%">
-                            <source src="./static/videos/Predicted  Mask vs GT Mask on Stable Video.mp4"
-                                type="video/mp4">
-                        </video> -->
                         <div class="video-compare-container">
-                            <video class="video" id="Specond" loop playsinline autoPlay muted onplay="resizeAndPlay(this)">
+                            <video class="video" id="Segmentation" loop playsinline autoPlay muted onplay="resizeAndPlay(this)">
                                 <source src="./static/videos/Predicted  Mask vs GT Mask on Stable Video.mp4" type="video/mp4">
                             </video>
-                            <canvas height=0 id="SpecondMerge" , style="width: 100%;"></canvas>
+                            <canvas height=0 id="SegmentationMerge" , style="width: 100%;"></canvas>
                         </div>
                     </div>
                     <!--/ Simulation. -->
@@ -310,11 +306,6 @@
                             stabilization is readily apparent in the restored video.
                         </p>
                     </div>
-                    <!-- <div class="content has-text-centered">
-                        <video id="replay-video" controls muted preload playsinline width="100%">
-                            <source src="./static/videos/Without and With Stabilization.mkv" type="video/mp4">
-                        </video>
-                    </div> -->
                     <div class="video-compare-container">
                         <video class="video" id="Stab" loop playsinline autoPlay muted onplay="resizeAndPlay(this)">
                             <source src="./static/videos/Without and With Stabilization.mkv" type="video/mp4">
@@ -332,11 +323,6 @@
                             the
                             application of different processing techniques to distinct regions of the video. </p>
                     </div>
-                    <!-- <div class="content has-text-centered">
-                        <video id="replay-video" controls muted preload playsinline width="100%">
-                            <source src="./static/videos/Without and With Segmentation.mkv" type="video/mp4">
-                        </video>
-                    </div> -->
                     <div class="video-compare-container">
                         <video class="video" id="Segmentation" loop playsinline autoPlay muted onplay="resizeAndPlay(this)">
                             <source src="./static/videos/Without and With Segmentation.mkv" type="video/mp4">
@@ -357,11 +343,6 @@
                             video.
                         </p>
                     </div>
-                    <!-- <div class="content has-text-centered">
-                        <video id="replay-video" controls muted preload playsinline width="100%">
-                            <source src="./static/videos/Without and With Restormer.mkv" type="video/mp4">
-                        </video>
-                    </div> -->
                     <div class="video-compare-container">
                         <video class="video" id="Restormer" loop playsinline autoPlay muted onplay="resizeAndPlay(this)">
                             <source src="./static/videos/Without and With Restormer.mkv" type="video/mp4">
@@ -418,7 +399,7 @@
     <footer class="footer">
         <div class="container">
             <div class="content has-text-centered">
-                <a class="icon-link" href="#">
+                <a class="icon-link" href="https://arxiv.org/abs/2404.13605">
                     <i class="fas fa-file-pdf"></i>
                 </a>
                 <a class="icon-link" href="https://github.com/Riponcs" class="external-link" disabled>
