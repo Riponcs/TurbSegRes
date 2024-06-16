@@ -124,6 +124,18 @@
                                         </span>
                                         <span>Data</span>
                                     </a>
+                                </span>
+                                <span class="link-block">
+                                    <a href="https://github.com/Riponcs/QuickTurbSim" class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-wind"></i>
+                                        </span>
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Fast Turbulence Simulator</span>
+                                    </a>
+                                </span>
                             </div>
 
                         </div>
@@ -238,7 +250,7 @@
                     <h3 class="title is-4">Stabilization of High Focal Length Videos</h3>
                     <div class="content has-text-justified">
                         <p>
-                            <span class="dnerf">Turb-Seg-Res</span> tackles the stabilization of high focal length videos, highly sensitive to vibrations. Most current technologies struggle with extreme vibrations and motion, especially in long-range videos with turbulence, causing artifacts that disrupt feature matching. Unlike SIFT, SURF, and ORB, our GPU-accelerated cross-correlation method ensures precise motion estimation and superior stabilization.
+                            <span class="dnerf">Turb-Seg-Res</span> tackles the stabilization of high focal length videos, highly sensitive to vibrations. Existing technologies often fail to handle extreme vibrations and motion, particularly in long-range videos with turbulence, which produces artifacts that disrupt feature matching. Unlike methods such as SIFT, SURF, and ORB, our GPU-accelerated cross-correlation technique provides accurate motion estimation and superior stabilization.
                         </p>
                     </div>
                     <div class="content has-text-centered">
@@ -252,19 +264,21 @@
                     <h3 class="title is-4">Simulation of Turbulence Video</h3>
                     <div class="content has-text-justified">
                         <p>
-                            <span class="dnerf">Turb-Seg-Res</span> introduces a novel tilt-and-blur video simulator
-                            based on simplex
-                            noise for rapidly generating plausible turbulence effects with temporal coherence. Unlike
-                            existing
-                            physics-based methods, our procedural noise approach efficiently models coherent pixel
-                            shifts and adaptive
-                            blurring across video frames, mimicking atmospheric turbulence over time. This simulator can
-                            process
-                            200x200 videos at real time, enabling the rapid creation of large training datasets up to
-                            1024x1024
-                            resolution for our transformer model.
+                            <span class="dnerf">Turb-Seg-Res</span> introduces a novel tilt-and-blur video simulator based on 3 sets of 3D simplex noise for rapidly generating plausible turbulence effects with temporal coherence. Unlike existing physics-based methods, our procedural noise approach efficiently models coherent pixel shifts and adaptive blurring across video frames, mimicking atmospheric turbulence over time. This simulator can process 200x200 videos in real time, enabling the rapid creation of large training datasets up to 1024x1024 resolution for our transformer model. It is versatile and can work with any image size. Additionally, this is the first open-source turbulence video simulator with temporal consistency.
                         </p>
+                        <div class="content has-text-centered">
+                            <a href="https://github.com/Riponcs/QuickTurbSim" class="button is-normal is-rounded is-dark">
+                                <span class="icon">
+                                    <i class="fas fa-wind"></i>
+                                </span>
+                                <span class="icon">
+                                    <i class="fab fa-github"></i>
+                                </span>
+                                <span>Access our Fast Turbulence Simulator</span>
+                            </a>
+                        </div>                    
                     </div>
+                    
                     <div class="content has-text-centered">
                         <video id="replay-video" controls muted preload playsinline width="100%" autoplay loop>
                             <source src="./static/videos/PS2 vs Our Turbulence Simulator.mkv" type="video/mp4">
