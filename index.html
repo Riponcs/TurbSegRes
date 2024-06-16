@@ -139,7 +139,7 @@
             <div class="hero-body">
                 <div class="video-compare-container">
                     <video class="video" id="Specond" loop playsinline autoPlay muted onplay="resizeAndPlay(this)">
-                        <source src="./static/videos/InputVsTurbSegRes.mp4" type="video/mp4">
+                        <source src="./static/videos/InputVsTurbSegResMain.mp4" type="video/mp4">
                     </video>
                     <canvas height=0 id="SpecondMerge" , style="width: 100%;"></canvas>
                 </div>
@@ -232,9 +232,23 @@
             <!-- Animation. -->
             <div class="columns is-centered">
                 <div class="column is-full-width">
+                    <h2 class="title is-3">Results</h2>
+
+                    <!-- Stabilization -->
+                    <h3 class="title is-4">Stabilization of High Focal Length Videos</h3>
+                    <div class="content has-text-justified">
+                        <p>
+                            <span class="dnerf">Turb-Seg-Res</span> tackles the stabilization of high focal length videos, highly sensitive to vibrations. Most current technologies struggle with extreme vibrations and motion, especially in long-range videos with turbulence, causing artifacts that disrupt feature matching. Unlike SIFT, SURF, and ORB, our GPU-accelerated cross-correlation method ensures precise motion estimation and superior stabilization.
+                        </p>
+                    </div>
+                    <div class="content has-text-centered">
+                        <video id="replay-video" controls muted preload playsinline width="100%" autoplay loop>
+                            <source src="./static/videos/StabilizationComparison.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <!--/ Stabilization -->
 
                     <!-- Simulation. -->
-                    <h2 class="title is-3">Results</h2>
                     <h3 class="title is-4">Simulation of Turbulence Video</h3>
                     <div class="content has-text-justified">
                         <p>
@@ -252,13 +266,13 @@
                         </p>
                     </div>
                     <div class="content has-text-centered">
-                        <video id="replay-video" controls muted preload playsinline width="100%">
+                        <video id="replay-video" controls muted preload playsinline width="100%" autoplay loop>
                             <source src="./static/videos/PS2 vs Our Turbulence Simulator.mkv" type="video/mp4">
                         </video>
                     </div>
                     <!--/ Simulation. -->
 
-                    <!-- Simulation. -->
+                    <!-- Motion Segmentaion. -->
                     <h3 class="title is-4">Unsupervised Motion Segmentation for Dynamic Scenes</h3>
                     <div class="content has-text-justified">
                         <p>
@@ -287,7 +301,7 @@
                             <canvas height=0 id="SegmentationMerge" , style="width: 100%;"></canvas>
                         </div>
                     </div>
-                    <!--/ Simulation. -->
+                    <!--/ Motion Segmentaion.. -->
 
 
                     <!-- Add a 100 pixel gap now -->
